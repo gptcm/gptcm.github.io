@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open, Sans-Swap;
+}
+
+.festival-container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient();
+    transition: background 1.5s ease;
+}
+
+.navbar h2 {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+#season {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.particle {
+    position: absolute;
+    top: -30px;
+    animation: falling linear infinite;
+    pointer-events: none;
+}
+
+@keyframes falling {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width:600px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar h2 {
+        font-size: 15px;
+    }
+
+    #season {
+        font-size: 12px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
