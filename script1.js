@@ -6,7 +6,7 @@ const festivals = {
         title: "Welcome to<br>Festival Seasons",
         description: "A little colour, joy and celebration for every season.",
         footer: "Wishing you happiness throughout the year",
-        symbols: ["✦", "✧", "❋"]
+        symbols: [""]
     },
 
     vishu: {
